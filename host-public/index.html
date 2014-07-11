@@ -4,23 +4,45 @@
   <meta charset="UTF-8">
   <title>host</title>
   <style>
+    * {
+        padding: 0;
+        margin: 0;
+    }
     body {
         color: darkgreen;
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        left: 0;
+        top: 3em;
     }
     iframe {
-        border: 1px solid black;
-        width: 40%;
-        height: 500px;
-        float: right;
+        border-left: 1px solid black;
+        position: fixed;
+        width: 50%;
+        height: 100%;
+        right: 0;
+        top: 3em;
+    }
+    #desc {
+        position: fixed;
+        border-bottom: 1px solid black;
+        width: 100%;
+        height: 3em;
+        top: 0;
+        text-align: center;
+        line-height: 3em;
+        color: black;
+        font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <h1>host (http://localhost:3031)</h1>
-  <p>Cross-origin resource requests without CORS or JSONP.
+  <h1>http://localhost:3031 (host)</h1>
+  <hr>
+  <p id="desc">Cross-origin resource requests without CORS or JSONP.
   Uses an iframe loaded on the target domain to handle the AJAX.
-  </p>
-  <p>Communication uses <code>postMessage()</code> between frames</p>
+  Communication uses <code>postMessage()</code> between frames</p>
 
   <iframe style="" src="http://localhost:3032/assets" frameborder="0"></iframe>
 
