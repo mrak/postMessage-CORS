@@ -1,0 +1,1 @@
+==== contents of cross origin resource "resource.txt" on iframe's domain ====

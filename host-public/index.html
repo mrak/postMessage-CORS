@@ -3,11 +3,26 @@
 <head>
   <meta charset="UTF-8">
   <title>host</title>
+  <style>
+    body {
+        color: darkgreen;
+    }
+    iframe {
+        border: 1px solid black;
+        width: 40%;
+        height: 500px;
+        float: right;
+    }
+  </style>
 </head>
 <body>
-  <h1>host</h1>
+  <h1>host (http://localhost:3031)</h1>
+  <p>Cross-origin resource requests without CORS or JSONP.
+  Uses an iframe loaded on the target domain to handle the AJAX.
+  </p>
+  <p>Communication uses <code>postMessage()</code> between frames</p>
 
-  <iframe src="http://localhost:3032/assets" frameborder="0"></iframe>
+  <iframe style="" src="http://localhost:3032/assets" frameborder="0"></iframe>
 
   <script src="/js/framebus.js"></script>
   <script src="/js/host-app.built.js"></script>
